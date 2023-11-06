@@ -4,11 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-0: #0d2f4b;
+  --color-1: #f3a23f;
+  --color-2: #a7cbdc;
+  --color-3: #a5cad1;
+  --color-4: #c94f4c;
+  --color-5: #3d5f7b;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #0d2f4b;
+  background-color: var(--color-0);
   /* background-color: white; */
 }
 
@@ -21,14 +30,30 @@ body {
 
 .shortcuts {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
   width: 500px;
-  border: solid white 1px;
+  /* border: solid white 1px; */
 }
 
 i {
   color: white;
   font-size: 3rem;
+}
+
+.shortcuts a:nth-child(1) i {
+  color: var(--color-1);
+}
+
+.shortcuts a:nth-child(2) i {
+  color: var(--color-2);
+}
+
+.shortcuts a:nth-child(3) i {
+  color: var(--color-3);
+}
+
+.shortcuts a:nth-child(4) i {
+  color: var(--color-4);
 }
