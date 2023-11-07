@@ -86,8 +86,9 @@ body {
 
 .search-inp {
     height: 45px;
-    width: 600px;
+    width: 90%;
     border: none;
+    border-radius: 0 5rem 5rem 0;
 }
 
 .search-inp::-webkit-input-placeholder {
@@ -99,11 +100,27 @@ body {
 }
 
 .search-inp:focus {
-    border: 4px solid red;
+    border: none;
+    outline: none;
+}
+
+input[type="text"] {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
 }
 
 button {
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 
 h1 {
