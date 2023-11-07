@@ -47,19 +47,19 @@ body {
     color: var(--color-1);
 }
 
-.shortcuts a:nth-child(2) i {
-    color: var(--color-2);
-}
-
 .shortcuts a:nth-child(3) i {
-    color: var(--color-3);
-}
-
-.shortcuts a:nth-child(4) i {
     color: var(--color-2);
 }
 
 .shortcuts a:nth-child(5) i {
+    color: var(--color-3);
+}
+
+.shortcuts a:nth-child(7) i {
+    color: var(--color-2);
+}
+
+.shortcuts a:nth-child(9) i {
     color: var(--color-1);
 }
 
