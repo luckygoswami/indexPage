@@ -1,61 +1,112 @@
 * {
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 :root {
-  --color-0: #0d2f4b;
-  --color-1: #f3a23f;
-  --color-2: #a7cbdc;
-  --color-3: #c94f4c;
-  --color-4: #3d5f7b;
+    --color-0: #0d2f4b;
+    --color-1: #f3a23f;
+    --color-2: #a7cbdc;
+    --color-3: #c94f4c;
+    --color-4: #3d5f7b;
 }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-0);
-  /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-0);
+    /* background-color: white; */
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .shortcuts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  width: 500px;
-  /* border: solid white 1px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+    /* border: solid white 1px; */
 }
 
-i {
-  font-size: 2.7rem;
+.shortcuts i {
+    font-size: 2.5rem;
 }
 
 .shortcuts a:nth-child(1) i {
-  color: var(--color-1);
+    color: var(--color-1);
 }
 
 .shortcuts a:nth-child(2) i {
-  color: var(--color-2);
+    color: var(--color-2);
 }
 
 .shortcuts a:nth-child(3) i {
-  color: var(--color-3);
+    color: var(--color-3);
 }
 
 .shortcuts a:nth-child(4) i {
-  color: var(--color-2);
+    color: var(--color-2);
 }
 
 .shortcuts a:nth-child(5) i {
-  color: var(--color-1);
+    color: var(--color-1);
+}
+
+.search-bar {
+    background-color: white;
+    height: 45px;
+    width: 600px;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar i {
+    color: var(--color-0);
+    font-size: 1rem;
+}
+
+.search-inp {
+    height: 45px;
+    width: 600px;
+    border: none;
+}
+
+.search-inp::-webkit-input-placeholder {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    color: var(--color-0);
+    /* font-weight: 800; */
+    letter-spacing: 1.5px;
+}
+
+.search-inp:focus {
+    border: 4px solid red;
+}
+
+button {
+    visibility: hidden;
+}
+
+h1 {
+    display: none;
+    color: white;
 }

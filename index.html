@@ -12,9 +12,28 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="container">
+            <h1>Search Anything</h1>
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input
+                    type="text"
+                    id="search"
+                    class="search-inp"
+                    placeholder="Search Anything..."
+                />
+                <button onclick="googleSearch();">Search</button>
+            </div>
             <div class="shortcuts">
                 <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
                 <a href="https://fontawesome.com/search"
@@ -30,9 +49,6 @@
                     href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
                     ><i class="fa-brands fa-bootstrap"></i
                 ></a>
-
-                <input type="text" id="search" />
-                <button onclick="googleSearch();">Search</button>
             </div>
         </div>
         <script src="script.js"></script>
