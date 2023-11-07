@@ -62,7 +62,7 @@ function printPhrases(phrases, el) {
 // Start typing
 function run() {
     let phrases = [
-        "JS is so strange :)",
+        "Google is so strange :)",
         'Find anything e.g. "Dancing Cats"',
         "Google anything here...",
     ];
