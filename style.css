@@ -135,17 +135,10 @@ h1 {
 }
 
 p {
-    /* background-color: aqua; */
     color: var(--color-4);
     font-size: 2.7rem;
     height: 75%;
     letter-spacing: -0.2rem;
     margin: 0 2px;
+    cursor: default;
 }
-/* 
-p {
-    font: bold 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 14px;
-    height: 35px;
-    margin: 0px;
-} */
