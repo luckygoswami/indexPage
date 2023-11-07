@@ -5,3 +5,11 @@ function googleSearch() {
 
     window.location.href = url;
 }
+
+let searchInput = document.getElementById("search");
+
+searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        googleSearch();
+    }
+});
